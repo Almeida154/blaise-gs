@@ -1,2 +1,1 @@
-# agrotech-global-solution
-Global Solutions 1S - TIN
+<img alt="Ecoleta" title="Ecoleta" src="./iob/slide 1.png" width="220px" />
