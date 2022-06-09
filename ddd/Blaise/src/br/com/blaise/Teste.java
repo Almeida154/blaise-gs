@@ -16,6 +16,25 @@ public class Teste {
 		this.ameaca = ameaca;
 	}
 	
+	public Teste() {};
+	
+	// Methods
+	public void agendar(String data) {
+		if (this.data == null) {
+			this.data = data;
+		} else {
+			System.out.println("Teste já agendado");
+		}
+	}
+
+	public void show() {
+		System.out.println("\n| INSTÂNCIA DE TESTE");
+		System.out.println("Data: " + this.getData());
+		System.out.println("Resultado: " + this.getResultado());
+		System.out.println("Produto testado: " + this.getProduto());
+		System.out.println("Ameaça testada: " + this.getAmeaca());
+	}
+	
 	// Getters and Setters
 	public String getData() {
 		return data;
@@ -24,7 +43,11 @@ public class Teste {
 		this.data = data;
 	}
 	public String getResultado() {
-		return resultado;
+		if (resultado != null && !resultado.equals("")) {
+			return resultado;
+		} else {
+			return "Nenhum resultado encontrado";
+		}
 	}
 	public void setResultado(String resultado) {
 		this.resultado = resultado;

@@ -15,6 +15,17 @@ public class Produto {
 		this.fabricante = fabricante;
 		this.fornecedor = fornecedor;
 	}
+	
+	public Produto() {};
+	
+	// Methods
+	public void show() {
+		System.out.println("\n| INSTÂNCIA DE PRODUTO");
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Embalagem: " + this.getEmbalagem());
+		System.out.println("Fabricante: " + this.getFabricante());
+		System.out.println("Fornecedor: " + this.getFornecedor());
+	}
 
 	// Getters and Setters
 	public String getNome() {

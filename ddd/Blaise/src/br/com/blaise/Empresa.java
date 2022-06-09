@@ -14,6 +14,8 @@ public class Empresa {
 		this.seguimento = seguimento;
 	}
 	
+	public Empresa() {};
+	
 	// Getters and Setters
 
 	public String getCnpj() {
