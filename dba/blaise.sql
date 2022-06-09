@@ -1,4 +1,4 @@
--- David Almeida | 96033
+-- David Almeida | 96033 --
 
 CREATE TABLE CARGOS (
     cargo_id NUMBER(*,0) CONSTRAINT PK_CARGO PRIMARY KEY
