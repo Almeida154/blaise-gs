@@ -7,3 +7,110 @@
 @import url('../../global/footer.css');
 @import url('../../global/newsletter.css');
 @import url('../../global/subheader.css');
+
+/* Components */
+.docs__container {
+    border-radius: 8px;
+    position: relative;
+    margin-top: -8rem;
+    background-color: var(--background-c);
+    z-index: 10;
+}
+
+.section__subtitle {
+    padding-top: 5rem;
+}
+
+.docs__desc {
+    text-align: center;
+    opacity: .7;
+    font-weight: var(--light-fw);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.docs__tipographies {
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.docs__tipo h4 {
+    font-size: var(--medium-fs);
+    font-weight: var(--bold-fw);
+}
+
+.docs__tipo .desc {
+    font-size: var(--small-fs);
+    font-weight: var(--light-fw);
+    opacity: .7;
+}
+
+.docs__tipo span {
+    display: block;
+    margin-top: 1rem;
+    font-size: var(--biggest-fs);
+}
+
+.docs .abc {
+    margin-top: 1rem;
+    letter-spacing: 6px;
+    opacity: .7;
+    font-weight: var(--light-fw);
+}
+
+.merriweather {
+    font-family: 'Merriweather';
+}
+
+.docs__palette {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.docs__palette-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.docs__palette-color p {
+    opacity: .4;
+}
+
+.docs__palette-color div {
+    display: block;
+    width: 10px;
+    height: 30px;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, .05);
+}
+
+.docs__palette-color.up:nth-child(1) div {
+    background-color: #3FA043;
+}
+
+.docs__palette-color.up:nth-child(2) div {
+    background-color: #94B902;
+}
+
+.docs__palette-color.up:nth-child(3) div {
+    background-color: #ffffff;
+}
+
+.docs__palette-color.down:nth-child(1) div {
+    background-color: #000;
+}
+
+.docs__palette-color.down:nth-child(2) div {
+    background-color: #0e0e0e;
+}
+
+.docs__palette-color.down:nth-child(3) div {
+    background-color: #d8d8d8;
+}
