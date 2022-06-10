@@ -1,0 +1,85 @@
+/* Reusable CSS */
+.section {
+  padding: 4.5rem 0 4.5rem;
+}
+
+.section__title {
+  font-family: 'Merriweather';
+  text-align: left;
+  font-size: var(--big-fs);
+  color: var(--text-c);
+  margin-bottom: var(--2-spacing);
+  font-weight: var(--bold-fw);
+}
+
+.section__subtitle {
+  font-size: var(--small-fs);
+  font-weight: var(--semiBold-fw);
+  color: var(--secondary-c);
+  margin-bottom: var(--m-0-5);
+  display: block;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-c);
+  padding: 0.5rem 1.2rem;
+  border-radius: 16px;
+  font-weight: var(--regular-fw);
+  color: var(--primary-c);
+  transition: 0.1s;
+  font-family: 'Roboto';
+}
+
+.button__icon {
+  font-size: var(--regular-fs);
+  font-weight: var(--extraLight-fw);
+  opacity: 0.7;
+}
+
+.button:hover {
+  background-color: var(--primary-c);
+  color: var(--text-c);
+}
+
+/* === SCROLL UP === */
+.scrollup {
+  position: fixed;
+  background: var(--secondary-c);
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--text-c);
+}
+
+.scrollup:hover {
+  background: var(--primary-c);
+  opacity: 1;
+}
+
+/* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--background-c);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--container-c);
+  border-radius: 0.5rem;
+}

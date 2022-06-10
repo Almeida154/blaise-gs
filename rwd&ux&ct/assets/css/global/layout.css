@@ -1,0 +1,21 @@
+/* Layout */
+.container {
+  max-width: 968px;
+  margin-left: var(--1-5-spacing);
+  margin-right: var(--1-5-spacing);
+}
+
+.grid {
+  display: grid;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

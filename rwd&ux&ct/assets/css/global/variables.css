@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --header-height: 5rem;
+
+  /* === Colors === */
+  --primary-c: #3FA043;
+  --secondary-c: #94B902;
+  --background-c: #000;
+  --container-c: #2b2b2b;
+  --text-c: #fff;
+  --subtext-c: #d8d8d8;
+
+  /* === Font and typography === */
+  --body-font: 'Roboto', sans-serif;
+  --biggest-fs: 2rem;
+  --big-fs: 1.8rem;
+  --medium-fs: 1.25rem;
+  --normal-fs: 0.938rem;
+  --small-fs: 0.813rem;
+  --smaller-fs: 0.75rem;
+
+  /* === Font weight === */
+  --extraLight-fw: 300;
+  --light-fw: 300;
+  --regular-fw: 400;
+  --medium-fw: 500;
+  --semiBold-fw: 600;
+  --bold-fw: 700;
+
+  /* === Spacing metrics === */
+  --0-25-spacing: 0.25rem;
+  --0-5-spacing: 0.5rem;
+  --0-75-spacing: 0.75rem;
+  --1-spacing: 1rem;
+  --1-5-spacing: 1.5rem;
+  --2-spacing: 2rem;
+  --2-5-spacing: 2.5rem;
+
+  /* === z index ===*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+  :root {
+    --biggest-fs: 3.5rem;
+    --big-fs: 2.25rem;
+    --medium-fs: 1.5rem;
+    --normal-fs: 1rem;
+    --small-fs: 0.875rem;
+    --smaller-fs: 0.813rem;
+  }
+}
