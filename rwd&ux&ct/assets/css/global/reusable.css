@@ -10,6 +10,7 @@
   color: var(--text-c);
   margin-bottom: var(--2-spacing);
   font-weight: var(--bold-fw);
+  text-align: center;
 }
 
 .section__subtitle {
@@ -18,6 +19,7 @@
   color: var(--secondary-c);
   margin-bottom: var(--m-0-5);
   display: block;
+  text-align: center;
 }
 
 .button {

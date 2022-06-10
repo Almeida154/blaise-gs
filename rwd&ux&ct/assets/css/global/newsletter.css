@@ -1,0 +1,36 @@
+/* Newsletter */
+.newsletter {
+    background-color: var(--container-c);
+}
+
+.newsletter__container {
+    grid-row: 1;
+    justify-content: center;
+}
+
+.newsletter__wrapper {
+    display: flex;
+    max-width: 340px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--background-c);
+}
+
+.newsletter__wrapper input {
+    width: 100%;
+    font-size: var(--regular-fs);
+    background: none;
+    color: var(--text-c);
+}
+
+.newsletter__wrapper button {
+    border-radius: 4px;
+    padding: 8px 16px;
+    height: calc(60px - (2 * 8px));
+    background-color: var(--container-c);
+    color: var(--text-c);
+    font-family: 'Merriwether';
+    font-weight: var(--bold-fw);
+}

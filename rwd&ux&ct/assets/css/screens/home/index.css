@@ -5,6 +5,9 @@
 
 @import url('../../global/header.css');
 @import url('../../global/footer.css');
+@import url('../../global/newsletter.css');
 
 /* Components */
 @import url('./hero.css');
+@import url('./whoweare.css');
+@import url('./agrarian.css');
