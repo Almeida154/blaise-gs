@@ -114,3 +114,12 @@
 .docs__palette-color.down:nth-child(3) div {
     background-color: #d8d8d8;
 }
+
+.docs__user-pic {
+    display: block;
+    width: 160px;
+    height: 160px;
+    outline: 3px solid var(--secondary-c);
+    border-radius: 50%;
+    margin: 2rem auto;
+}
