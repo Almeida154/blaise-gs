@@ -1,0 +1,18 @@
+/* How it works */
+.howitworks__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.howitworks__title h3 {
+    font-family: 'Merriweather';
+    font-size: var(--biggest-fs);
+}
+
+.howitworks__content p {
+    font-weight: var(--light-fw);
+    line-height: 1.8rem;
+    opacity: .5;
+}

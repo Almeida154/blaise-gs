@@ -1,0 +1,32 @@
+/* Water */
+.water h2 {
+    margin-bottom: 3rem;
+}
+
+.water__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.water__content p {
+    opacity: .5;
+    font-weight: var(--light-fw);
+    line-height: 1.8rem;
+}
+
+.water__content p + p {
+    margin-top: 1rem;
+}
+
+.water__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water__img img {
+    border-radius: 4px;
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 10px 10px var(--secondary-c);
+}

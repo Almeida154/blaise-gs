@@ -1,0 +1,31 @@
+/* Pruduct */
+.product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__container p {
+    text-align: center;
+    opacity: .7;
+    font-weight: var(--light-fw);
+    width: 80%;
+}
+
+.product__products {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.product__products img {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product__products img:hover {
+    transform: scale(1.1);
+}

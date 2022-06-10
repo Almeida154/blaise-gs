@@ -1,0 +1,15 @@
+/* Subheader */
+.subheader {
+    position: relative;
+    background-color: var(--container-c);
+    margin-top: var(--header-height);
+}
+
+.subheader__container span,
+.subheader__container h2 {
+    text-align: left;
+}
+
+.subheader__detail {
+    color: var(--secondary-c);
+}
