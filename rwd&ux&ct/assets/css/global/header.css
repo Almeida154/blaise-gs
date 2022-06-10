@@ -1,0 +1,139 @@
+/* Header & Nav */
+.header {
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.7))
+  );
+  backdrop-filter: blur(15px) saturate(180%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: 0.3s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 132px;
+}
+
+.nav__interactions {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  font-size: var(--regular-fs);
+  font-family: 'Roboto';
+  transition: 0.3s;
+  color: var(--subtext-color);
+  opacity: .7;
+}
+
+.nav__link:hover {
+  color: var(--text-c);
+  text-shadow: 0 0 10px var(--text-c);
+  opacity: 1;
+}
+
+.nav__link.active {
+  color: var(--text-c);
+  text-shadow: 0 0 10px var(--text-c);
+  opacity: 1;
+}
+
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav_toggle-theme {
+  font-size: var(--medium-fs);
+  cursor: pointer;
+}
+
+.nav__open {
+  color: var(--text-c);
+  opacity: 0.7;
+  display: none;
+  font-size: var(--big-fs);
+  transition: 0.5s;
+}
+
+@media (max-width: 568px) {
+  .nav__interactions {
+    justify-content: center;
+    position: fixed;
+    top: var(--header-height);
+    right: -150%;
+    width: 75%;
+    height: calc(100vh - var(--header-height));
+    padding: 2.5rem 0;
+    transition: 0.5s ease-in;
+    z-index: var(--z-fixed);
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .nav__interactions.active {
+    right: 0;
+    background: rgba(0, 16, 41, 0.95);
+    backdrop-filter: blur(15px);
+  }
+
+  .header.active {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 16, 41, 0.95))
+    );
+  }
+
+  .nav_toggle-theme {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .nav__open {
+    display: block;
+  }
+
+  .nav__open.active {
+    transform: rotate(-45deg);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav__buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button {
+    font-size: var(--medium-fs);
+  }
+
+  .nav__link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--medium-fs);
+  }
+}

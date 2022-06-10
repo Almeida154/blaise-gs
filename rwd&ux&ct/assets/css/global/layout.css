@@ -3,6 +3,8 @@
   max-width: 968px;
   margin-left: var(--1-5-spacing);
   margin-right: var(--1-5-spacing);
+  border-left: 1px dashed rgb(202, 38, 38);
+  border-right: 1px dashed rgb(202, 38, 38);
 }
 
 .grid {

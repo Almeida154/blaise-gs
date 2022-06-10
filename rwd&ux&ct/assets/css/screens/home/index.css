@@ -2,3 +2,9 @@
 @import url('../../global/variables.css');
 @import url('../../global/layout.css');
 @import url('../../global/reusable.css');
+
+@import url('../../global/header.css');
+@import url('../../global/footer.css');
+
+/* Components */
+@import url('./hero.css');
