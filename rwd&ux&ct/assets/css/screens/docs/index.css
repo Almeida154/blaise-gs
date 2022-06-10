@@ -123,3 +123,34 @@
     border-radius: 50%;
     margin: 2rem auto;
 }
+
+.docs__user-name {
+    text-align: center;
+    color: var(--primary-c);
+    margin-bottom: .5rem;
+    font-weight: var(--bold-fw);
+}
+
+.docs__user-desc {
+    text-align: center;
+    opacity: .7;
+}
+
+.docs__user-infos {
+    margin-top: 3rem;
+}
+
+.docs__user-infos h5 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: var(--primary-c);
+    font-size: var(--medium-fs);
+    letter-spacing: 4px;
+}
+
+.docs__user-infos p {
+    color: var(--text-c);
+    opacity: .7;
+    font-size: var(--normal-fs);
+    font-weight: var(--light-fw);
+}
