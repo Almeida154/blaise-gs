@@ -63,13 +63,17 @@
         </div>
       </section>
 
-      <section class="section whoweare">
-        <span class="section__subtitle">Nos conheça</span>
+      <section class="section whoweare" id="whoweare">
+        <span class="section__subtitle">Sobre a Blaise</span>
         <h2 class="section__title">Quem somos nós</h2>
-        <div class="whoweare__container grid">
-          <div class="whoweare__content"></div>
-          <div>
-            <img src="" alt="">
+        <div class="whoweare__container container grid">
+          <div class="whoweare__content">
+            <p>A Blaise é uma agrotech, startup que promove a revolução digital no agronegócio. Nosso principal objetivo é atender todo tipo de cliente, seja de grande, pequeno ou médio porte. Nossa cultura é 100% green e nosso objetivo é alcançar bons resultados sem machucar a natureza.</p>
+
+            <p>Criada em meados de 1990, a Blaise vem modificando o jeito de se trabalhar com a agricultura.</p>
+          </div>
+          <div class="whoweare__icon">
+            <img src="./assets/img/colored-icon.svg" alt="Ícone da logo da Blaise">
           </div>
         </div>
       </section>
@@ -77,11 +81,22 @@
       <section class="section lastproduct">
         <span class="section__subtitle">Agrarian</span>
         <h2 class="section__title">Conheça nosso novo produto</h2>
-        <div class="lastproduct__container container grid">
-          <div class="lastproduct__content"></div>
-          <div>
-            <img src="" alt="">
+        <div class="lastproduct__container container">
+          <div class="lastproduct__content">
+            <p>O Agrarian é um SaaS (Software as a Service) composto de subprodutos, então o proprietário tem a opção de escolher determinados serviços ou o todo. Entre os produtos: Agrarian Water, Agrarian Plant, Agrarian Crop e Agrarian Draft. Até o momento a Blaise só oferece o Agrarian Water, os demais têm previsão de lançamento até o fim do ano.</p>
           </div>
+
+          <div class="lastproduct__products">
+            <img src="./assets/img/water.svg" alt="Produto da Blaise">
+            <img src="./assets/img/plant.svg" alt="Produto da Blaise">
+            <img src="./assets/img/crop.svg" alt="Produto da Blaise">
+            <img src="./assets/img/draft.svg" alt="Produto da Blaise">
+          </div>
+
+          <a class="button" href="agrarian.html">
+            Detalhes
+            <i class="bx bx-right-arrow-alt button__icon"></i>
+          </a>
         </div>
       </section>
 
@@ -106,27 +121,30 @@
     <footer class="footer section">
       <div class="footer__container container grid">
         <div class="footer__content">
-          <img
-            src="assets/img/white-brand.svg"
-            class="footer__logo"
-            alt=""
-            srcset=""
-          />
+          <a href="#hero">
+            <img
+              src="assets/img/white-brand.svg"
+              class="footer__logo"
+              alt=""
+              srcset=""
+            />
+          </a>
         </div>
 
         <div class="footer__content">
           <h3 class="footer__topic">Navegação</h3>
           <ul class="footer__links grid">
-            <li><a href="#hero" class="footer__link">Início</a></li>
+            <li><a href="#hero" class="footer__link">Home</a></li>
             <li>
-              <a href="#features" class="footer__link"> Funcionalidades </a>
-            </li>
-            <!-- <li><a href="#nfts" class="footer__link">NFTs</a></li> -->
-            <li>
-              <a href="#collections" class="footer__link">Coleções</a>
+              <a href="#features" class="footer__link">
+                Agrarian
+              </a>
             </li>
             <li>
-              <a href="#criptos" class="footer__link">Criptomoedas</a>
+              <a href="#collections" class="footer__link">Contato</a>
+            </li>
+            <li>
+              <a href="#criptos" class="footer__link">Docs</a>
             </li>
           </ul>
         </div>
@@ -135,7 +153,7 @@
           <h3 class="footer__topic">Sobre nós</h3>
           <ul class="footer__links grid">
             <li>
-              <a href="#" class="footer__link">A BlueBenx</a>
+              <a href="#whoweare" class="footer__link">A Blaise</a>
             </li>
             <li>
               <a href="#" class="footer__link">Termos</a>
@@ -153,13 +171,10 @@
           <h3 class="footer__topic">Fale conosco</h3>
           <ul class="footer__links grid">
             <li>
-              <a href="#" class="footer__link">(11) 4130-1030</a>
+              <a href="#" class="footer__link">(11) 91337-1101</a>
             </li>
             <li>
-              <a href="#" class="footer__link">0800 520 0025</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">atendimento@bluebenx.com</a>
+              <a href="#" class="footer__link">blaise@agrotech.com</a>
             </li>
           </ul>
           <div class="footer__social">
@@ -174,8 +189,6 @@
             </div>
           </div>
         </div>
-
-      <div class="footer__content"></div>
     </div>
   </footer>
 </body>

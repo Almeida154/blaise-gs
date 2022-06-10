@@ -1,0 +1,28 @@
+/* Who we are */
+.whoweare h2 {
+    margin-bottom: 3rem;
+}
+
+.whoweare__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.whoweare__content p {
+    opacity: .5;
+    font-weight: var(--light-fw);
+    line-height: 1.8rem;
+}
+
+.whoweare__content p + p {
+    margin-top: 1rem;
+}
+
+.whoweare__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoweare__icon img {
+    width: 160px;
+}

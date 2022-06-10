@@ -2,3 +2,45 @@
 .lastproduct {
     background-color: var(--primary-c);
 }
+
+.lastproduct__content {
+    display: flex;
+    justify-content: center;
+}
+
+.lastproduct__content p {
+    text-align: center;
+    opacity: .7;
+    font-weight: var(--light-fw);
+    width: 80%;
+}
+
+.lastproduct__products {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.lastproduct__products img {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.lastproduct__products img:hover {
+    transform: scale(1.1);
+}
+
+.lastproduct__container .button {
+    margin: 0 auto;
+    opacity: .8;
+    width: min-content;
+    cursor: pointer;
+}
+
+.lastproduct__container .button:hover {
+    background-color: var(--secondary-c);
+    opacity: 1;
+}
