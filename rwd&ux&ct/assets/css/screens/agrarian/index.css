@@ -6,9 +6,9 @@
 @import url('../../global/header.css');
 @import url('../../global/footer.css');
 @import url('../../global/newsletter.css');
+@import url('../../global/subheader.css');
 
 /* Components */
-@import url('../../global/subheader.css');
 @import url('./product.css');
 @import url('./water.css');
 @import url('./howitworks.css');

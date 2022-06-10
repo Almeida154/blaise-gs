@@ -25,13 +25,13 @@
           <div class="nav__interactions" id="navInteractions">
             <ul class="nav__list">
               <li>
-                <a href="index.html" class="nav__link active">Home</a>
+                <a href="index.html" class="nav__link">Home</a>
               </li>
               <li>
                 <a href="agrarian.html" class="nav__link">Agrarian</a>
               </li>
               <li>
-                <a href="contact.html" class="nav__link">Contato</a>
+                <a href="contact.html" class="nav__link active">Contato</a>
               </li>
               <li>
                 <a href="docs.html" class="nav__link">Docs</a>
@@ -46,7 +46,122 @@
     </header>
 
     <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque animi praesentium ab quae. Nulla ducimus, aliquid veritatis soluta quasi blanditiis voluptatem, labore dicta ut consectetur quo, explicabo rerum impedit?
+      <section class="section subheader">
+        <div class="subheader__container container">
+            <span class="section__subtitle">Contato</span>
+            <h2 class="section__title">Fale conosco<span class="subheader__detail">.</span></h2>
+        </div>
+      </section>
+
+      <section class="section form">
+        <div class="form__container container grid">
+          <div class="form__img">
+            <img src="./assets/img/contact-img.png" alt="">
+          </div>
+          <div class="form__content">
+            <form>
+              <fieldset>
+                <legend>
+                  <h3>Contate-nos</h3>
+                </legend>
+      
+                <div class="field-group">
+                  <div class="field">
+                    <label for="name">Nome *</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Seu nome aqui"
+                      required
+                    />
+                  </div>
+      
+                  <div class="field">
+                    <label for="cpf">CPF</label>
+                    <input
+                      type="number"
+                      name="cpf"
+                      id="cpf"
+                      placeholder="Seu cpf"
+                    />
+                  </div>
+                </div>
+      
+                <div class="field-group">
+                  <div class="field">
+                    <label for="email">Email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="exemplo@email.com"
+                      required
+                    />
+                  </div>
+        
+                  <div class="field">
+                    <label for="phone">Telefone</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="Seu telefone"
+                    />
+                  </div>
+                </div>
+      
+                <div class="field-group">
+                  <div class="field">
+                    <label for="city">Cidade</label>
+                    <input
+                      type="number"
+                      name="city"
+                      id="city"
+                      placeholder="Sua idade"
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="state">Estado</label>
+                    <input
+                      type="number"
+                      name="state"
+                      id="state"
+                      placeholder="Seu estado"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="subject">Assunto *</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Seu telefone"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="message">Mensagem *</label>
+                  <textarea
+                    type="text"
+                    name="message"
+                    id="message"
+                    placeholder="Mensagem"
+                    required
+                  ></textarea>
+                </div>
+
+                <input type="submit" class="button" value="Enviar" />
+
+              </fieldset>              
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer section">
