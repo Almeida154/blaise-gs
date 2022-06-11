@@ -12,6 +12,8 @@
         rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/screens/contact/index.css">
+
+    <script src="./assets/js/form.js"></script>
 </head>
 <body>
     <header class="header">
@@ -59,7 +61,7 @@
             <img src="./assets/img/contact-img.png" alt="">
           </div>
           <div class="form__content">
-            <form>
+            <form id="form" onsubmit="event.preventDefault(); handleSendMessage();">
               <fieldset>
                 <legend>
                   <h3>Contate-nos</h3>
@@ -73,7 +75,6 @@
                       name="name"
                       id="name"
                       placeholder="Seu nome aqui"
-                      required
                     />
                   </div>
       
@@ -96,7 +97,7 @@
                       name="email"
                       id="email"
                       placeholder="exemplo@email.com"
-                      required
+                      
                     />
                   </div>
         
@@ -115,7 +116,7 @@
                   <div class="field">
                     <label for="city">Cidade</label>
                     <input
-                      type="number"
+                      type="text"
                       name="city"
                       id="city"
                       placeholder="Sua idade"
@@ -125,7 +126,7 @@
                   <div class="field">
                     <label for="state">Estado</label>
                     <input
-                      type="number"
+                      type="text"
                       name="state"
                       id="state"
                       placeholder="Seu estado"
@@ -139,8 +140,7 @@
                     type="text"
                     name="subject"
                     id="subject"
-                    placeholder="Seu telefone"
-                    required
+                    placeholder="Assunto"
                   />
                 </div>
 
@@ -151,9 +151,10 @@
                     name="message"
                     id="message"
                     placeholder="Mensagem"
-                    required
                   ></textarea>
                 </div>
+
+                <div id="errorContainer"></div>
 
                 <input type="submit" class="button" value="Enviar" />
 

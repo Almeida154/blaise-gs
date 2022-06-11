@@ -106,3 +106,9 @@ form .button {
 form .button:hover {
     background: var(--secondary-c);
 }
+
+#errorContainer {
+    color: red;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
