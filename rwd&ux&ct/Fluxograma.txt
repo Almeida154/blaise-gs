@@ -1,0 +1,5 @@
+A lógica usada para o fluxograma é da validação do formulário de contato do
+site, considerando que, de acordo com o Borto, os únicos campos obrigatórios
+são nome, email, assunto e mensagem, ou seja, o CPF não é obrigatório. Porém,
+caso o CPF seja preenchido, é necessário que haja uma verificação para saber
+se é válido ou não.
