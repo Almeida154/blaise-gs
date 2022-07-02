@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Contact</title>
 
     <!-- /* Boxicons */ -->
     <link
-        href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-        rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/screens/contact/index.css">
+    <link
+      rel="stylesheet"
+      href="./assets/css/screens/contact/index.css"
+    />
 
     <script src="./assets/js/form.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav container">
-          <div class="nav__logo">
-            <a href="#hero">
-              <img src="./assets/img/white-brand.svg" alt="" srcset="" />
-            </a>
-          </div>
-  
-          <div class="nav__interactions" id="navInteractions">
-            <ul class="nav__list">
-              <li>
-                <a href="index.html" class="nav__link">Home</a>
-              </li>
-              <li>
-                <a href="agrarian.html" class="nav__link">Agrarian</a>
-              </li>
-              <li>
-                <a href="contact.html" class="nav__link active">Contato</a>
-              </li>
-              <li>
-                <a href="docs.html" class="nav__link">Docs</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="nav__open" id="nav-open">
-            <i class="bx bx-grid-alt"></i>
-          </div>
-        </nav>
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a href="#hero">
+            <img
+              src="./assets/img/white-brand.svg"
+              alt=""
+              srcset=""
+            />
+          </a>
+        </div>
+
+        <div class="nav__interactions" id="navInteractions">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="agrarian.html" class="nav__link">Agrarian</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link active"
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a href="docs.html" class="nav__link">Docs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__open" id="nav-open">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="section subheader">
         <div class="subheader__container container">
-            <span class="section__subtitle">Contato</span>
-            <h2 class="section__title">Fale conosco<span class="subheader__detail">.</span></h2>
+          <span class="section__subtitle">Contato</span>
+          <h2 class="section__title">
+            Fale conosco<span class="subheader__detail">.</span>
+          </h2>
         </div>
       </section>
 
       <section class="section form">
         <div class="form__container container grid">
           <div class="form__img">
-            <img src="./assets/img/contact-img.png" alt="">
+            <img src="./assets/img/contact-img.png" alt="" />
           </div>
           <div class="form__content">
-            <form id="form" onsubmit="event.preventDefault(); handleSendMessage();">
+            <form
+              id="form"
+              onsubmit="event.preventDefault(); handleSendMessage();"
+            >
               <fieldset>
                 <legend>
                   <h3>Contate-nos</h3>
                 </legend>
-      
+
                 <div class="field-group">
                   <div class="field">
                     <label for="name">Nome *</label>
@@ -77,7 +94,7 @@
                       placeholder="Seu nome aqui"
                     />
                   </div>
-      
+
                   <div class="field">
                     <label for="cpf">CPF</label>
                     <input
@@ -88,7 +105,7 @@
                     />
                   </div>
                 </div>
-      
+
                 <div class="field-group">
                   <div class="field">
                     <label for="email">Email *</label>
@@ -97,10 +114,9 @@
                       name="email"
                       id="email"
                       placeholder="exemplo@email.com"
-                      
                     />
                   </div>
-        
+
                   <div class="field">
                     <label for="phone">Telefone</label>
                     <input
@@ -111,7 +127,7 @@
                     />
                   </div>
                 </div>
-      
+
                 <div class="field-group">
                   <div class="field">
                     <label for="city">Cidade</label>
@@ -157,8 +173,7 @@
                 <div id="errorContainer"></div>
 
                 <input type="submit" class="button" value="Enviar" />
-
-              </fieldset>              
+              </fieldset>
             </form>
           </div>
         </div>
@@ -166,77 +181,77 @@
     </main>
 
     <footer class="footer section">
-        <div class="footer__container container grid">
-          <div class="footer__content">
-            <a href="#hero">
-              <img
-                src="assets/img/white-brand.svg"
-                class="footer__logo"
-                alt=""
-                srcset=""
-              />
-            </a>
-          </div>
-  
-          <div class="footer__content">
-            <h3 class="footer__topic">Navegação</h3>
-            <ul class="footer__links grid">
-              <li><a href="#hero" class="footer__link">Home</a></li>
-              <li>
-                <a href="#features" class="footer__link">
-                  Agrarian
-                </a>
-              </li>
-              <li>
-                <a href="#collections" class="footer__link">Contato</a>
-              </li>
-              <li>
-                <a href="#criptos" class="footer__link">Docs</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="footer__content">
-            <h3 class="footer__topic">Sobre nós</h3>
-            <ul class="footer__links grid">
-              <li>
-                <a href="#whoweare" class="footer__link">A Blaise</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Termos</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Privacidade</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Cookies</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="footer__content">
-            <h3 class="footer__topic">Fale conosco</h3>
-            <ul class="footer__links grid">
-              <li>
-                <a href="#" class="footer__link">(11) 91337-1101</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">blaise@agrotech.com</a>
-              </li>
-            </ul>
-            <div class="footer__social">
-              <div class="footer__social-item">
-                <i class="bx bxl-instagram footer__social-icon"></i>
-              </div>
-              <div class="footer__social-item">
-                <i class="bx bxl-linkedin footer__social-icon"></i>
-              </div>
-              <div class="footer__social-item">
-                <i class="bx bxl-twitter footer__social-icon"></i>
-              </div>
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#hero">
+            <img
+              src="assets/img/white-brand.svg"
+              class="footer__logo"
+              alt=""
+              srcset=""
+            />
+          </a>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__topic">Navegação</h3>
+          <ul class="footer__links grid">
+            <li><a href="#hero" class="footer__link">Home</a></li>
+            <li>
+              <a href="#features" class="footer__link"> Agrarian </a>
+            </li>
+            <li>
+              <a href="#collections" class="footer__link">Contato</a>
+            </li>
+            <li>
+              <a href="#criptos" class="footer__link">Docs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__topic">Sobre nós</h3>
+          <ul class="footer__links grid">
+            <li>
+              <a href="#whoweare" class="footer__link">A Blaise</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Termos</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Privacidade</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Cookies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__topic">Fale conosco</h3>
+          <ul class="footer__links grid">
+            <li>
+              <a href="#" class="footer__link">(11) 91337-1101</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">blaise@agrotech.com</a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <div class="footer__social-item">
+              <i class="bx bxl-instagram footer__social-icon"></i>
+            </div>
+            <div class="footer__social-item">
+              <i class="bx bxl-linkedin footer__social-icon"></i>
+            </div>
+            <div class="footer__social-item">
+              <i class="bx bxl-twitter footer__social-icon"></i>
             </div>
           </div>
+        </div>
       </div>
     </footer>
-</body>
+
+    <script src="./assets/js/toggle.js"></script>
+  </body>
 </html>

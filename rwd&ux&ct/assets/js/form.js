@@ -26,30 +26,22 @@ function handleSendMessage() {
       if (isCPFValid(cpfValue)) {
         confirm(
           `
-                Enviado com sucesso, ${nomeValue}!
-                    Nome: ${nomeValue}
-                    Cpf: ${
-                      cpfValue != '' ? cpfValue : 'Não informado'
-                    }
-                    Email: ${emailValue}
-                    Telefone: ${
-                      telefoneValue != ''
-                        ? telefoneValue
-                        : 'não informado'
-                    }
-                    Assunto: ${assuntoValue}
-                    Mensagem: ${mensagemValue}
-                    Estado: ${
-                      estadoValue != ''
-                        ? estadoValue
-                        : 'não informado'
-                    }
-                    Cidade: ${
-                      cidadeValue != ''
-                        ? cidadeValue
-                        : 'não informado'
-                    }
-                `
+            Enviado com sucesso, ${nomeValue}!
+            Nome: ${nomeValue}
+            Cpf: ${cpfValue != '' ? cpfValue : 'Não informado'}
+            Email: ${emailValue}
+            Telefone: ${
+              telefoneValue != '' ? telefoneValue : 'não informado'
+            }
+            Assunto: ${assuntoValue}
+            Mensagem: ${mensagemValue}
+            Estado: ${
+              estadoValue != '' ? estadoValue : 'não informado'
+            }
+            Cidade: ${
+              cidadeValue != '' ? cidadeValue : 'não informado'
+            }
+          `
         );
       } else {
         console.log('cpf inválido');
@@ -58,24 +50,18 @@ function handleSendMessage() {
     } else {
       confirm(
         `
-            Enviado com sucesso, ${nomeValue}!
-                Nome: ${nomeValue}
-                Cpf: ${cpfValue != '' ? cpfValue : 'Não informado'}
-                Email: ${emailValue}
-                Telefone: ${
-                  telefoneValue != ''
-                    ? telefoneValue
-                    : 'não informado'
-                }
-                Assunto: ${assuntoValue}
-                Mensagem: ${mensagemValue}
-                Estado: ${
-                  estadoValue != '' ? estadoValue : 'não informado'
-                }
-                Cidade: ${
-                  cidadeValue != '' ? cidadeValue : 'não informado'
-                }
-            `
+          Enviado com sucesso, ${nomeValue}!
+          Nome: ${nomeValue}
+          Cpf: ${cpfValue != '' ? cpfValue : 'Não informado'}
+          Email: ${emailValue}
+          Telefone: ${
+            telefoneValue != '' ? telefoneValue : 'não informado'
+          }
+          Assunto: ${assuntoValue}
+          Mensagem: ${mensagemValue}
+          Estado: ${estadoValue != '' ? estadoValue : 'não informado'}
+          Cidade: ${cidadeValue != '' ? cidadeValue : 'não informado'}
+        `
       );
     }
   } else {

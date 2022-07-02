@@ -1,18 +1,34 @@
 /* How it works */
 .howitworks__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .howitworks__title h3 {
-    font-family: 'Merriweather';
-    font-size: var(--biggest-fs);
+  font-family: 'Merriweather';
+  font-size: var(--biggest-fs);
 }
 
 .howitworks__content p {
-    font-weight: var(--light-fw);
-    line-height: 1.8rem;
-    opacity: .5;
+  font-weight: var(--light-fw);
+  line-height: 1.8rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 520px) {
+  .howitworks__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .howitworks__title h3 {
+    width: min-content;
+  }
+
+  .howitworks__content p {
+    text-align: justify;
+  }
 }

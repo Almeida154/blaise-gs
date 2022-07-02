@@ -42,7 +42,7 @@
   font-family: 'Roboto';
   transition: 0.3s;
   color: var(--subtext-color);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .nav__link:hover {
@@ -74,6 +74,7 @@
   display: none;
   font-size: var(--big-fs);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 @media (max-width: 568px) {
@@ -93,17 +94,8 @@
 
   .nav__interactions.active {
     right: 0;
-    background: rgba(0, 16, 41, 0.95);
+    background: rgba(10, 10, 10, 0.45);
     backdrop-filter: blur(15px);
-  }
-
-  .header.active {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 16, 41, 0.95))
-    );
   }
 
   .nav_toggle-theme {
